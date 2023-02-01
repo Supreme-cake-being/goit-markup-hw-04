@@ -226,11 +226,10 @@ header {
   margin-left: var(--list-gap);
 }
 
-.feature-list-item .icon {
+.feature-list-item .icon-block {
+  padding: 24px 100px;
   background-color: var(--footer-logo-color);
   border-radius: 4px;
-  max-width: 100%;
-  padding: 24px 100px;
   margin-bottom: 8px;
 }
 
@@ -305,26 +304,26 @@ header {
   margin-bottom: 0;
 }
 
-.social-media {
+.social {
   padding: 0 16px 32px 16px;
 }
 
-.social-media-list {
+.social-list {
   display: flex;
   margin-left: calc(-1 * var(--list-gap));
 }
 
-.social-media-list li {
+.social-list-item.team {
   flex-basis: calc(100% / 4 - var(--list-gap));
+  height: 40px;
   margin-left: var(--list-gap);
 
   background-color: var(--accent-color);
   border-radius: 100%;
-  padding: 12px;
 }
 
-.icon {
-  position: absolute;
+.social-list-item.team .icon {
+  margin: 12px;
 }
 
 /* Customers */
@@ -334,9 +333,10 @@ header {
 }
 
 .customers-list-item {
-  /* flex-basis: calc(100% / 6 - var(--list-gap)); */
+  flex-basis: calc(100% / 6 - var(--list-gap));
   width: 168px;
   margin-left: var(--list-gap);
+  padding: 16px 32px;
 
   border: 1px solid var(--customers-border);
   border-radius: 4px;
@@ -347,6 +347,20 @@ footer {
   background-color: var(--title-text-color);
   padding-top: 100px;
   padding-bottom: 100px;
+}
+
+.footer-list {
+  display: flex;
+
+  margin-left: -120px;
+}
+
+.footer-list-item {
+  margin-left: 120px;
+}
+
+.footer-list-item:last-child {
+  margin-left: 80px;
 }
 
 footer .logo {
@@ -362,6 +376,39 @@ footer p {
   width: 264px;
   margin-top: 16px;
   margin-bottom: 0;
+}
+
+footer .title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+
+  color: var(--white);
+
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.social-container {
+  width: 208px;
+}
+
+footer .social-list {
+  display: flex;
+  margin-left: calc(-1 * 16px);
+}
+
+.social-list-item {
+  flex-basis: calc(100% / 4 - 16px);
+  height: 40px;
+  margin-left: 16px;
+
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 100%;
+}
+
+.social-list-item .icon {
+  margin: 8px;
 }
 
 /* Portfolio */
