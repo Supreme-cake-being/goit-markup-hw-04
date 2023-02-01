@@ -319,10 +319,8 @@ header {
   margin-left: var(--list-gap);
 
   background-color: var(--accent-color);
-}
-
-.social-media .icon {
-  fill: currentColor;
+  border-radius: 100%;
+  padding: 12px;
 }
 
 /* Customers */
