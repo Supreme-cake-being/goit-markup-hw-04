@@ -323,6 +323,10 @@ header {
   padding: 12px;
 }
 
+.icon {
+  position: absolute;
+}
+
 /* Customers */
 .customers-list {
   display: flex;
