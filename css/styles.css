@@ -180,7 +180,6 @@ header {
     url(../images/main_page/hero/hero_bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
 }
 
 .hero-title {
@@ -333,8 +332,11 @@ header {
 }
 
 .social-list-item.team:hover,
-.social-list-item.team:focus {
+.social-list-item.team:focus,
+.icon-block.team:hover,
+.icon-block.team:focus {
   background-color: var(--portfolio-button-bgc);
+  border-radius: 100%;
 }
 
 /* Customers */
@@ -358,8 +360,8 @@ header {
 
 .customers-list-item:hover,
 .customers-list-item:focus,
-.customers-list-item:hover .icon,
-.customers-list-item:focus .icon {
+.icon-block.customers:hover .icon,
+.icon-block.customers:focus .icon {
   border-color: var(--portfolio-button-bgc);
   fill: var(--portfolio-button-bgc);
 }
@@ -430,8 +432,9 @@ footer .social-list {
 }
 
 .social-list-item:hover,
-.social-list-item:focus {
+.icon-block.footer:focus {
   background-color: var(--success);
+  border-radius: 100%;
 }
 
 /* Portfolio */
@@ -497,7 +500,7 @@ footer .social-list {
 }
 
 .project-list-item:hover,
-.project-list-item:focus {
+.project-list-item .link:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
